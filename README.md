@@ -5,7 +5,8 @@ Flashcard app that poses question and reveals answer upon click.
 
 ### App Walk-though
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="http://g.recordit.co/nZlUtF5fZX.gif" width=200><br>
+<img src="http://g.recordit.co/iBdll1i2ik.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
