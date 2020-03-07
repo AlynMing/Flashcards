@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
     //TextView text = (TextView) findViewById(R.id.option1);
@@ -65,6 +67,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if ((requestCode == 100) && (resultCode == RESULT_OK)) {
+            String q = data.getExtras().getString("question");
+            String a = data.getExtras().getString("answer");
+
+            TextView Question = findViewById(R.id.flashcard_question);
+            Question.setText(q);
+
+            TextView Answer = findViewById(R.id.answer);
+            Answer.setText(a);
+
+
+            Snackbar.make(findViewById(R.id.flashcard_question),
+                    "Card created successfully",
+                    Snackbar.LENGTH_SHORT)
+                    .show();
+        }
     }
 
 }

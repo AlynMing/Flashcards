@@ -41,8 +41,8 @@ public class AddCardActivity extends AppCompatActivity {
                     String answer = ((EditText) findViewById(R.id.editAnswer)).getText().toString();
 
                     Intent data = new Intent(); // data goes in here
-                    data.putExtra("string1", question); // key 'question' is added into the intent
-                    data.putExtra("string2", answer); // key 'answer' is added into the intent
+                    data.putExtra("question", question); // key 'question' is added into the intent
+                    data.putExtra("answer", answer); // key 'answer' is added into the intent
                     setResult(RESULT_OK, data); // set result code and bundle data for response
                     finish(); // closes this activity and pass data to the original activity that launched this activity
                 }
