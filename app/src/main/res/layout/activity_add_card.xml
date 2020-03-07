@@ -18,6 +18,7 @@
         />
 
     <EditText
+        android:id="@+id/editQuestion"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
@@ -25,9 +26,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="57dp"
         android:layout_marginTop="169dp"
-        android:hint="Enter a question..." />
+        android:hint="Enter a question..."
+        tools:ignore="InvalidId" />
 
     <EditText
+        android:id="@+id/editAnswer"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
