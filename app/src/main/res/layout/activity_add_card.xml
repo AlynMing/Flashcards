@@ -34,4 +34,14 @@
         android:layout_marginTop="252dp"
         android:hint="Enter the answer..." />
 
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="58dp"
+        app:srcCompat="@drawable/ic_icon_save" />
+
 </RelativeLayout>
