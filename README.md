@@ -1,9 +1,14 @@
-## Lab 1
+## Lab 1 & 2
 
 ### App Description
 Flashcard app that poses question and reveals answer upon click.
 
 ### App Walk-though
+
+Updated for Lab 2
+<img src="http://g.recordit.co/O9r0FpQc2p.gif" width=200><br>
+
+
 
 <img src="http://g.recordit.co/nZlUtF5fZX.gif" width=200><br>
 <img src="http://g.recordit.co/iBdll1i2ik.gif" width=200><br>
