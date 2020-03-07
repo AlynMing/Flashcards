@@ -7,7 +7,7 @@ Flashcard app that poses question and reveals answer upon click.
 
 Updated for Lab 2
 
-<img src="http://g.recordit.co/O9r0FpQc2p.gif" width=200><br>
+<img src="http://g.recordit.co/idhhB12PCi.gif" width=200><br>
 
 
 
