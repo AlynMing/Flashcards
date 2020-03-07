@@ -87,4 +87,14 @@
         android:text="Pine Needles"
         android:textSize="18sp" />
 
+    <ImageView
+        android:id="@+id/addButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="58dp"
+        android:src="@drawable/ic_icon_plus" />
+
 </RelativeLayout>
