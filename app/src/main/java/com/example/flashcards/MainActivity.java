@@ -84,6 +84,16 @@ public class MainActivity extends AppCompatActivity {
             Answer.setText(a);
 
 
+            TextView one = findViewById(R.id.option1);
+            one.setText("");
+            TextView two = findViewById(R.id.option2);
+            two.setText("");
+            TextView three = findViewById(R.id.option3);
+            three.setText("");
+            TextView four = findViewById(R.id.option4);
+            four.setText("");
+
+
             Snackbar.make(findViewById(R.id.flashcard_question),
                     "Card created successfully",
                     Snackbar.LENGTH_SHORT)
