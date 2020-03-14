@@ -41,26 +41,37 @@
         android:visibility="invisible" />
 
     <TextView
-        android:id="@+id/option1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="255dp"
-        android:text="Smoke"
-        android:textSize="18sp" />
-
-    <TextView
         android:id="@+id/option4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="false"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="405dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="458dp"
         android:text="Vodka"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="308dp"
+        android:text="Smoke"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="358dp"
+        android:text="Pine Needles"
         android:textSize="18sp" />
 
     <TextView
@@ -71,20 +82,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="false"
         android:layout_centerVertical="false"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="355dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="408dp"
         android:text="Mercury"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/option2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="305dp"
-        android:text="Pine Needles"
         android:textSize="18sp" />
 
     <ImageView
@@ -97,6 +97,17 @@
         android:layout_marginBottom="58dp"
         android:src="@drawable/ic_icon_plus" />
 
+    <Button
+        android:id="@+id/nextCard"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/ic_iconmonstr_next"
+
+        />
 
 
 </RelativeLayout>
