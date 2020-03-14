@@ -1,23 +1,35 @@
 package com.example.flashcards;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     //TextView text = (TextView) findViewById(R.id.option1);
+    FlashcardDatabase flashcardDatabase;
+    List<Flashcard> allFlashcards;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        flashcardDatabase = new FlashcardDatabase(getApplicationContext());
+        allFlashcards = flashcardDatabase.getAllCards();
+
+        if (allFlashcards != null && allFlashcards.size() > 0) {
+            ((TextView) findViewById(R.id.flashcard_question)).setText(allFlashcards.get(0).getQuestion());
+            ((TextView) findViewById(R.id.answer)).setText(allFlashcards.get(0).getAnswer());
+        }
 
 
         findViewById(R.id.flashcard_question).setOnClickListener(new View.OnClickListener() {
@@ -82,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
 
             TextView Answer = findViewById(R.id.answer);
             Answer.setText(a);
+
+            flashcardDatabase.insertCard(new Flashcard(q, a));
+            allFlashcards = flashcardDatabase.getAllCards();
 
 
             TextView one = findViewById(R.id.option1);
