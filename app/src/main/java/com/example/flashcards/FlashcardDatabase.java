@@ -1,5 +1,7 @@
 package com.example.flashcards;
 
+/*FlashcardDatabase : This is an extra class created to easily interact with the database with helper functions that use FlashcardDao directly.*/
+
 import android.content.Context;
 
 import androidx.room.Room;

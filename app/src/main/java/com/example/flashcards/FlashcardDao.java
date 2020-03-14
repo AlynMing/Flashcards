@@ -1,5 +1,7 @@
 package com.example.flashcards;
 
+/*FlashcardDao : Dao stands for Data Access Objects. This is a fancy way of saying that this class lets us perform SQL queries without actually having to write complicated SQL queries.*/
+
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;

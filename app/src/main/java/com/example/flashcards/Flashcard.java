@@ -1,5 +1,7 @@
 package com.example.flashcards;
 
+/*Flashcard : This class defines objects that we put in the database. For every field in Flashcard, a column is created in the database*/
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.room.ColumnInfo;
